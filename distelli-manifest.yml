@@ -1,0 +1,18 @@
+rodrigobeirao/AppRodrigo:
+
+
+  PkgInclude:
+    - '*'
+
+  PreRelease:
+    - echo "Begin PreRelease"
+
+
+    - echo "Begin PreInstall"
+
+
+  PostInstall:
+    - echo "Begin PostInstall"
+
+  Exec:
+

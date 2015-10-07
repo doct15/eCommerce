@@ -1,0 +1,14 @@
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\bin\Debug\eCommerce.Model.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\bin\Debug\eCommerce.Model.pdb
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.pdb
+C:\Users\rodrigo\Desktop\ECOMERCE\ecommerce\eCommerce.Model\bin\Debug\eCommerce.Model.dll
+C:\Users\rodrigo\Desktop\ECOMERCE\ecommerce\eCommerce.Model\bin\Debug\eCommerce.Model.pdb
+C:\Users\rodrigo\Desktop\ECOMERCE\ecommerce\eCommerce.Model\obj\Debug\eCommerce.Model.csprojResolveAssemblyReference.cache
+C:\Users\rodrigo\Desktop\ECOMERCE\ecommerce\eCommerce.Model\obj\Debug\eCommerce.Model.dll
+C:\Users\rodrigo\Desktop\ECOMERCE\ecommerce\eCommerce.Model\obj\Debug\eCommerce.Model.pdb
+C:\Users\rodrigo\Desktop\ecommerce\eCommerce.Model\bin\Debug\eCommerce.Model.dll
+C:\Users\rodrigo\Desktop\ecommerce\eCommerce.Model\bin\Debug\eCommerce.Model.pdb
+C:\Users\rodrigo\Desktop\ecommerce\eCommerce.Model\obj\Debug\eCommerce.Model.csprojResolveAssemblyReference.cache
+C:\Users\rodrigo\Desktop\ecommerce\eCommerce.Model\obj\Debug\eCommerce.Model.dll
+C:\Users\rodrigo\Desktop\ecommerce\eCommerce.Model\obj\Debug\eCommerce.Model.pdb

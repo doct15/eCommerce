@@ -1,0 +1,45 @@
+﻿@model eCommerce.Model.Produto
+@{
+    ViewBag.Title = "Editar Produto";
+}
+
+
+
+
+<form action="@Url.Action("EditarProduto", "Produtos")" method="post">
+
+    <div>
+        <span>Nome do Produto</span>
+        <input type="text" id="inpNome" value="@Model.Nome" name="inpNome">
+    </div>
+
+    <div>
+        <span>Descricao</span>
+        <textarea id="inpDescricao" name="inpDescricao">@Model.Descricao</textarea>
+    </div>
+
+    <div>
+        <span>Caminho Imagem</span>
+        <input id="inpCaminhoImagem" value="@Model.CaminhoImagem" name="inpCaminhoImagem">
+    </div>
+
+    <div>
+        <span>Preco</span>
+        <input id="inpPreco" name="inpPreco" value="@Model.Preco">
+    </div>
+
+    <div>
+        <span>Categoria</span>
+        <select id="inpCategoria" name="inpCategoria">
+            <option>Selecione</option>
+            @foreach (var categoria in ViewBag.Categorias)
+            {
+                <option value="@categoria.ID">@categoria.Nome</option>
+            }
+        </select>
+    </div>
+
+    <input type="hidden" id="idProduto" name="idProduto" value="@Model.ID" />
+
+    <input type="submit" value="Salvar" />
+</form>

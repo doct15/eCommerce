@@ -1,0 +1,49 @@
+﻿@model List<eCommerce.Model.Categoria>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Categorias</h2>
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descricao</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var categoria in Model)
+        {
+            <tr>
+                <td>@categoria.ID</td>
+                <td>@categoria.Nome</td>
+                <td>@categoria.Descricao</td>
+                <td>
+                    <input type="submit" value="Editar" />
+                </td>
+                <td>
+                    <form action="@Url.Action("RemoverCategoria", "Categorias")" method="post">
+                        <input type="hidden" name="inpIdCategoria" value="@categoria.ID" />
+                        <input type="submit" value="Excluir" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+<a href="@Url.Action("NovaCategoria", "Categorias")">Cadastrar nova categoria</a>
+
+
+
+
+
+<h3 style="color:red">1. NA HORA DE EXCLUIR, VERIFICAR SE A CATEGORIA NAO ESTÁ ATRELADA A ALGUM PRODUTO</h3>

@@ -1,0 +1,39 @@
+﻿@model List<eCommerce.Model.UsuarioSistema>
+@{
+    ViewBag.Title = "Usuarios do Sistema";
+}
+
+<h2>Usuarios do Sistema</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Senha</th>
+            <th>Ultimo Login</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.ID</td>
+                <td>@usuario.Username</td>
+                <td>@usuario.Senha</td>
+                <td>@usuario.UltimoLogin</td>
+                <th>
+                    <form action="@Url.Action("RemoverUsuario", "Usuarios")" method="post">
+                        <input type="hidden" name="inpIdUsuario" value="@usuario.ID" />
+                        <input type="submit" value="Remover" id="btnRemoverUsuario" />
+                    </form>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<a href="@Url.Action("Novo", "Usuarios")">Cadastrar novo usuário no sistema</a>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "NovoUsuario";  
+}
+
+<h2>Novo Usuario</h2>
+
+
+<form action="@Url.Action("AdicionarUsuario", "Usuarios")" method="post">
+
+    <div>
+        <span>Username</span>
+        <input type="text" id="inpUsername" name="inpUsername">
+    </div>
+
+    <div>
+        <span>Senha</span>
+        <input type="text" id="inpSenha" name="inpSenha">
+    </div>
+
+    <input type="submit" value="Cadastrar" />
+</form>

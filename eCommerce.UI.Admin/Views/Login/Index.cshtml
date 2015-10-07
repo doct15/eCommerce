@@ -1,0 +1,108 @@
+﻿@{
+    Layout = null;
+
+    bool usuarioInvalido;   
+    if (TempData["UsuarioInvalido"] != null )
+    {
+        usuarioInvalido = true;
+    }
+    else
+    {
+        usuarioInvalido = false;
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <form action="@Url.Action("EfetuarLogin", "Login")" method="post">
+
+        <div id="loginBox">
+            <span id="title">Bem-vindo à tela de login do sistema. Por favor insira seus dados nos campos abaixo:</span>
+
+            <div class="field">
+                <span>Nome de usuário</span>
+                <input type="text" id="inpUserName" name="inpUserName" />
+            </div>
+
+            <div class="field">
+                <span>Senha</span>
+                <input type="password" id="inpSenha" name="inpSenha" />
+            </div>
+
+            <input type="submit" value="Entrar" id="btnEntrar" />
+
+        </div>
+
+
+        @if (usuarioInvalido)
+        {
+            <h2>Dados Inválidos!</h2>
+        }
+    </form>
+
+</body>
+
+
+</html>
+
+
+<style>
+    body {
+        background-color: #cdcdcd;
+        margin: 0;
+        padding: 0;
+    }
+
+    #loginBox {
+        height: 350px;
+        width: 500px;
+        background-color: rgba(232, 232, 232, 1);
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin: 25px;
+        padding: 20px;
+    }
+
+
+        #loginBox #title {
+            font-weight: bold;
+            font-family: Arial;
+            display: block;
+        }
+
+        #loginBox .field {
+            display: inline-block;
+            float: left;
+            clear: both;
+            padding: 10px;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+            #loginBox .field span {
+                display: block;
+                float: left;
+                clear: both;
+            }
+
+            #loginBox .field input {
+                display: block;
+                float: left;
+                clear: both;
+            }
+
+
+    #btnEntrar {
+        float: left;
+        clear: both;
+        margin-top: 20px;
+    }
+</style>
+

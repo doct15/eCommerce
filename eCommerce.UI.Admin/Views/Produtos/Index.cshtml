@@ -1,0 +1,56 @@
+﻿@model List<eCommerce.Model.Produto>
+@{
+    
+}
+
+<h2>Produtos</h2>
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descricao</th>
+            <th>Caminho Imagem</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var produto in Model)
+        {
+            <tr>
+                <td>@produto.ID</td>
+                <td>@produto.Nome</td>
+                <td>@produto.Descricao</td>
+                <td>@produto.CaminhoImagem</td>
+                <td>@produto.Preco</td>
+                <td>@produto.Categoria.Nome</td>
+
+                <td>
+                    <form action="@Url.Action("Editar", "Produtos")" method="get">
+                        <input type="hidden" name="idProduto" value="@produto.ID" />
+                        <input type="submit" value="Editar" />
+                    </form>
+                </td>
+                <td>
+                    <form action="@Url.Action("RemoverProduto", "Produtos")" method="post">
+                        <input type="hidden" name="idProduto" value="@produto.ID" />
+                        <input type="submit" value="Excluir" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+<a href="@Url.Action("Novo", "Produtos")">Cadastrar novo produto</a>
+
+
+
