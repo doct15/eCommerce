@@ -1,0 +1,7 @@
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.DataAccess\bin\Release\eCommerce.DataAccess.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.DataAccess\bin\Release\eCommerce.DataAccess.pdb
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.DataAccess\bin\Release\eCommerce.Model.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.DataAccess\bin\Release\eCommerce.Model.pdb
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.DataAccess\obj\Release\eCommerce.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.DataAccess\obj\Release\eCommerce.DataAccess.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.DataAccess\obj\Release\eCommerce.DataAccess.pdb

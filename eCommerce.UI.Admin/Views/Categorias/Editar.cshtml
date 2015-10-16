@@ -1,0 +1,24 @@
+﻿@model eCommerce.Model.Categoria
+@{
+    ViewBag.Title = "Editar Categoria";
+}
+
+<h2>NovaCategoria</h2>
+
+
+<form action="@Url.Action("EditarCategoria", "Categorias")" method="post">
+
+    <div>
+        <span>Nome da Categoria</span>
+        <input type="text" id="inpNome" name="inpNome" value="@Model.Nome">
+    </div>
+
+    <div>
+        <span>Descricao</span>
+        <textarea id="inpDescricao" name="inpDescricao">@Model.Descricao</textarea>
+    </div>
+
+    <input type="hidden" id="idCategoria" name="idCategoria" value="@Model.ID" />
+
+    <input type="submit" value="Salvar" />
+</form>

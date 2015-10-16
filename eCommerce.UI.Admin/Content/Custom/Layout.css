@@ -1,0 +1,77 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------------------CABECALHO--------------------------------------------------------------------------------------------*/
+
+#cabecalho {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(59, 55, 56);
+    display: block;
+}
+
+#cabecalho h3
+{
+    color: #fff;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------BARRA LATERAL-------------------------------------------------------------------------------------------------*/
+
+#barraLateral {
+    background-color: rgb(198, 61, 15);
+    width: 200px;
+    height: 100vh;
+    float: left;
+
+}
+
+#barraLateral ul#menu
+{
+    text-align: center;
+    list-style: none;
+}
+
+#barraLateral ul#menu li
+{
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+#barraLateral ul#menu li a
+{
+    text-decoration: none;
+    color: rgb(253, 243, 231);
+    display: block;
+}
+
+#barraLateral ul#menu li:hover
+{
+    background-color: pink;
+}
+
+/*-------------------------------------------------------------------------CONTENT------------------------------------------------------------------------------------------------*/
+
+
+#content
+{
+    margin-left: 200px; /*ESTE É O TAMANHO DA SIDEBAR*/
+    background-color: rgb(253, 243, 231);
+    padding: 25px;
+    height: 100vh;
+}

@@ -1,0 +1,4 @@
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\bin\Release\eCommerce.Model.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\bin\Release\eCommerce.Model.pdb
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\obj\Release\eCommerce.Model.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.Model\obj\Release\eCommerce.Model.pdb

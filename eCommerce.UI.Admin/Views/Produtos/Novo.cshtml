@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Novo Produto";
+    List<eCommerce.Model.Categoria> categorias = ViewBag.Categorias;
+}
+
+<h2>Novo Produto</h2>
+
+
+<form action="@Url.Action("AdicionarProduto", "Produtos")" method="post">
+
+    <div>
+        <span>Nome do Produto</span>
+        <input type="text" id="inpNome" name="inpNome">
+    </div>
+
+    <div>
+        <span>Descricao</span>
+        <textarea id="inpDescricao" name="inpDescricao"></textarea>
+    </div>
+
+    <div>
+        <span>Caminho Imagem</span>
+        <input id="inpCaminhoImagem" name="inpCaminhoImagem">
+    </div>
+
+    <div>
+        <span>Preco</span>
+        <input id="inpPreco" name="inpPreco">
+    </div>
+
+    <div>
+        <span>Categoria</span>
+        <select id="inpCategoria" name="inpCategoria">
+            <option>Selecione</option>
+            @foreach(var categoria in categorias)
+            {
+                <option value="@categoria.ID">@categoria.Nome</option>
+            }
+        </select>
+    </div>
+
+    <input type="submit" value="Cadastrar" />
+</form>

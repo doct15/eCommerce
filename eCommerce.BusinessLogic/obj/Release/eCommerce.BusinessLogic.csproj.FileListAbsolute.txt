@@ -1,0 +1,9 @@
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\bin\Release\eCommerce.BusinessLogic.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\bin\Release\eCommerce.BusinessLogic.pdb
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\bin\Release\eCommerce.DataAccess.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\bin\Release\eCommerce.Model.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\bin\Release\eCommerce.DataAccess.pdb
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\bin\Release\eCommerce.Model.pdb
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\obj\Release\eCommerce.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\obj\Release\eCommerce.BusinessLogic.dll
+C:\Users\Rodrigo\Desktop\MVC\eCommerce\eCommerce.BusinessLogic\obj\Release\eCommerce.BusinessLogic.pdb

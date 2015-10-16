@@ -1,0 +1,20 @@
+rodrigobeirao/appgreat:
+
+  #The PkgInclude is to identify files that must be included in the application deployment: http://distel.li/pkgincludesection
+  PkgInclude:
+    - '*'
+
+  #The Build section is for specifying build steps: http://distel.li/buildsection
+  Build:
+    - echo "Begin Build"
+
+  #The PreInstall section occurs before install: distel.li/preinstallsection
+  PreInstall:
+    - echo "Begin PreInstall"
+
+  #The PostInstall section occurs after install: http://distel.li/postinstallsection
+  PostInstall:
+    - echo "Begin PostInstall"
+
+  #The Exec section executes and monitors the application: distel.li/execsection
+  Exec:

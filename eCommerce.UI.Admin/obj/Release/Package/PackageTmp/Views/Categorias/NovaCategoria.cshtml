@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "NovaCategoria";
+}
+
+<h2>NovaCategoria</h2>
+
+
+<form action="@Url.Action("AdicionarCategoria", "Categorias")" method="post">
+
+    <div>
+        <span>Nome da Categoria</span>
+        <input type="text" id="inpNome" name="inpNome">
+    </div>
+
+    <div>
+        <span>Descricao</span>
+        <textarea id="inpDescricao" name="inpDescricao"></textarea>
+    </div>
+
+    <input type="submit" value="Cadastrar" />
+</form>
