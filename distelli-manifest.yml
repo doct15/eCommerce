@@ -1,27 +1,18 @@
 bmcgehee/eCommerce:
 
-  Env:
-    - PATHTOMSBUILD: "c:\\Program Files (x86)\\MSBuild\\12.0\\Bin" 
-    - PROJDIR: "eCommerce.BusinessLogic"
-    - PROJFILE: "eCommerce.BusinessLogic.csproj"
-
-  #The PkgInclude is to identify files that must be included in the application deployment: http://distel.li/pkgincludesection
   PkgInclude:
-    - '*'
+    - '*.dll'
+    - '*.exe'
 
-  #The Build section is for specifying build steps: http://distel.li/buildsection
   Build:
     - echo "Begin Build"
     - dir
     - cd eCommerce.BusinessLogic
-    #- 'c:\Program Files (x86)\MSBuild\12.0\Bin\MSBuild.exe eCommerce.BusinessLogic.csproj'
     - 'c:\PROGRA~2\MSBuild\12.0\Bin\MsBUild.exe eCommerce.BusinessLogic.csproj'
 
-  #The PreInstall section occurs before install: distel.li/preinstallsection
   PreInstall:
     - echo "Begin PreInstall"
 
-  #The PostInstall section occurs after install: http://distel.li/postinstallsection
   PostInstall:
     - echo "Begin PostInstall"
 
