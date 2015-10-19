@@ -14,7 +14,7 @@ bmcgehee/eCommerce:
     - echo "Begin Build"
     - dir
     - cd eCommerce.BusinessLogic
-    - "c:\\Program Files (x86)\\MSBuild\\12.0\\Bin\\MSBuild.exe %PROJFILE%"
+    - 'c:\Program Files (x86)\MSBuild\12.0\Bin\MSBuild.exe eCommerce.BusinessLogic.csproj'
 
   #The PreInstall section occurs before install: distel.li/preinstallsection
   PreInstall:
