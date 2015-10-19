@@ -1,7 +1,7 @@
 bmcgehee/eCommerce:
 
   Env:
-    - PATHTOMSBUILD: "c:\Program Files (x86)\MSBuild\12.0\Bin" 
+    - PATHTOMSBUILD: "c:\\Program Files (x86)\\MSBuild\\12.0\\Bin" 
     - PROJDIR: "eCommerce.BusinessLogic"
     - PROJFILE: "eCommerce.BusinessLogic.csproj"
 
@@ -12,8 +12,8 @@ bmcgehee/eCommerce:
   #The Build section is for specifying build steps: http://distel.li/buildsection
   Build:
     - echo "Begin Build"
-    - cd %PROJDIR%
-    - %PATHTOMSBUILD%\MSBuild.exe %PROJFILE%
+    - "cd %PROJDIR%"
+    - "%PATHTOMSBUILD%\\MSBuild.exe %PROJFILE%"
 
   #The PreInstall section occurs before install: distel.li/preinstallsection
   PreInstall:
@@ -24,4 +24,4 @@ bmcgehee/eCommerce:
     - echo "Begin PostInstall"
 
   #The Exec section executes and monitors the application: distel.li/execsection
-  Exec:
+  #Exec:
