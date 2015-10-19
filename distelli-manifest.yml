@@ -13,6 +13,8 @@ bmcgehee/eCommerce:
   Build:
     - echo "Begin Build"
     - dir
+    - echo "PD %PROJDIR%"
+    - echo "PF %PROJFILE%"
     - "cd %PROJDIR%"
     - "%PATHTOMSBUILD%\\MSBuild.exe %PROJFILE%"
 
