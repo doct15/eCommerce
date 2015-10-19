@@ -12,6 +12,7 @@ bmcgehee/eCommerce:
   #The Build section is for specifying build steps: http://distel.li/buildsection
   Build:
     - echo "Begin Build"
+    - dir
     - "cd %PROJDIR%"
     - "%PATHTOMSBUILD%\\MSBuild.exe %PROJFILE%"
 
