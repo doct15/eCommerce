@@ -8,7 +8,7 @@ bmcgehee/eCommerce:
     - echo "Begin Build"
     - dir
     - cd eCommerce.BusinessLogic
-    - 'c:\PROGRA~2\MSBuild\12.0\Bin\MsBUild.exe eCommerce.BusinessLogic.csproj'
+    - '"c:\Program Files (x86)\MSBuild\12.0\Bin\MsBUild.exe" eCommerce.BusinessLogic.csproj'
 
   PreInstall:
     - echo "Begin PreInstall"
